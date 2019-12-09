@@ -7,31 +7,21 @@ function App() {
   return (
     <>
       <section className="section">
-        <div className="container">
-          <div className="field">
-            <label className="label">Name</label>
-            <div className="control">
-              <input className="input" type="text" placeholder="Text input" />
-            </div>
+        <div className="columns">
+          <div className="column is-one-fifth">
+              <aside className="menu">
+                <p className="menu-label">
+                  General
+                </p>
+                <ul className="menu-list">
+                  <li><a>Dashboard</a></li>
+                  <li><a>Customers</a></li>
+                </ul>
+            </aside>
           </div>
+          <div className="column">Auto</div>
         </div>
       </section>
-      <footer className="footer">
-        <div className="columns">
-          <div className="column">
-            First column
-          </div>
-          <div className="column">
-            Second column
-          </div>
-          <div className="column">
-            Third column
-          </div>
-          <div className="column">
-            Fourth column
-          </div>
-        </div>
-      </footer> 
     </>
   );
 }
